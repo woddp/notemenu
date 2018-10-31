@@ -1,0 +1,16 @@
+{
+    "name": "woddp/notemenu",
+    "authors": [
+        {
+            "name": "woddp",
+            "email": "717563864@qq.com"
+        }
+    ],
+
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Woddp\\Notemenu\\": "src/"
+        }
+    }
+}
