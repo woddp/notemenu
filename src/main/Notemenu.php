@@ -135,9 +135,9 @@ class Notemenu
              $icon=isset($icon)?$name:'';
              $remark=isset($remark)?$remark:'';
              $hasView=isset($hasView)?$hasView:'';
-             if(empty($idName)){
-                 throw  new \Exception("菜单idName必须赋值！");
-             }
+//             if(empty($idName)){
+//                 throw  new \Exception("菜单idName必须赋值！");
+//             }
              $parames=new MenuModel($name,$idName,$controller,$action,$parent,$display,$hasView,$order,$icon,$remark);
          }
          return $parames;
