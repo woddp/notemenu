@@ -132,7 +132,7 @@ class Notemenu
              $parent=isset($parent)?$parent:'';
              $display=isset($display)?$display:'';
              $order=isset($order)?$order:'';
-             $icon=isset($icon)?$name:'';
+             $icon=isset($icon)?$icon:'';
              $remark=isset($remark)?$remark:'';
              $hasView=isset($hasView)?$hasView:'';
 //             if(empty($idName)){
