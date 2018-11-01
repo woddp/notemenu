@@ -22,20 +22,18 @@ class Notemenu
     private $namespace = "";
     private $files = [];
 
-    private $data=[];
-    public function __construct(SessionManager $session, Repository $config)
-    {
-        $this->session = $session;
-        $this->config = $config;
+    public static  function getMenu($rootPath,$path,$namespace){
+        return (new Notemenu())->getBulidMenu($rootPath,$path,$namespace);
     }
 
     /**
      * @param $rootPath
      * @param $path
      * @param $namespace
+     * @return array
      * @throws \ReflectionException
      */
-    public function getMenu($rootPath,$path,$namespace)
+    public function getBulidMenu($rootPath,$path,$namespace)
     {
        $this->namespace=$namespace;
        $fiels= $this->analyseFiles($path);
