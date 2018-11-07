@@ -25,5 +25,7 @@ class MenuModel{
         $this->icon=$icon;
         $this->hasView=$hasView;
         $this->remark=$remark;
+        $this->request=$request;
+        $this->param=$param;
     }
 }
