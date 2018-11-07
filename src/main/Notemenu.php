@@ -133,10 +133,12 @@ class Notemenu
              $icon=isset($icon)?$icon:'';
              $remark=isset($remark)?$remark:'';
              $hasView=isset($hasView)?$hasView:'';
+             $request=isset($request)?$request:'';
+             $param=isset($param)?$param:'';
 //             if(empty($idName)){
 //                 throw  new \Exception("菜单idName必须赋值！");
 //             }
-             $parames=new MenuModel($name,$idName,$controller,$action,$parent,$display,$hasView,$order,$icon,$remark);
+             $parames=new MenuModel($name,$idName,$controller,$action,$parent,$display,$hasView,$order,$icon,$remark,$request,$param);
          }
          return $parames;
     }

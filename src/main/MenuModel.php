@@ -11,8 +11,10 @@ class MenuModel{
     public $icon='';//图标
     public $hasView='';//是否有底部菜单
     public $remark='';//备注
+    public $request='';//请求类型
+    public $param='';//参数
 
-    public function __construct($name="",$idName="",$controller="",$action="",$parent="",$display="",$hasView="",$order="",$icon="",$remark=""){
+    public function __construct($name="",$idName="",$controller="",$action="",$parent="",$display="",$hasView="",$order="",$icon="",$remark="",$request="",$param=""){
         $this->name=$name;
         $this->idName=$idName;
         $this->controller=$controller;
